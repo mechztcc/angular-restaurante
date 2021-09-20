@@ -18,4 +18,8 @@ export class WelcomeComponent implements OnInit {
     this.chapter = 1;
   }
 
+  changeChapter(chapter: any) {
+    this.chapter = chapter;
+  }
+
 }

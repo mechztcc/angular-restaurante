@@ -2,7 +2,7 @@
     <app-waves-top></app-waves-top>
     <div class="container">
         <button *ngIf="chapter == 2" class="btn-sm btn-open-default" (click)="navigate()"><i class="uil uil-arrow-left"></i></button>
-        <app-card-welcome *ngIf="chapter == 1"></app-card-welcome>
+        <app-card-welcome *ngIf="chapter == 1" (return)="changeChapter($event)"></app-card-welcome>
         <app-card-selection-login *ngIf="chapter == 2"></app-card-selection-login>
     </div>
     <app-waves-bottom></app-waves-bottom>

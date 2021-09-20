@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,14 +8,16 @@ import { Router } from '@angular/router';
 })
 export class CardWelcomeComponent implements OnInit {
 
+  @Output() return: EventEmitter<number> = new EventEmitter();
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
 
-  navigate() {
-    // this.router.navigate(['user'])
+  changeChapter(e: any) {
+    this.return.emit(e);
   }
 
 }
