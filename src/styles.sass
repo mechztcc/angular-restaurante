@@ -16,18 +16,26 @@ body
         border: none
         margin: 3.5%
 
-    .btn-default
-        box-shadow: 5px 5px 15px #cacfcf, -5px -5px 10px 5px #fff
+    .btn-open-default
+        box-shadow: 7px 7px 12px #cacfcf, 7px -7px 12px #fff
         color:  #5C5665    
 
 
-    .btn-primary
-        box-shadow: 5px 5px 20px 7px rgba(142,84,233,70%), -5px -5px 5px 3px #fff
+    .btn-open-primary
+        box-shadow: 7px 7px 12px rgba(142,84,233,80%), -7px -7px 12px #fff
         color:  #FFF
-        background: linear-gradient(90deg, #4776E6, #8E54E9)
+        background: linear-gradient(120deg, rgba(71, 118, 230, 60%), #8E54E9)
         font-weight: bold
 
+    .btn-closed-default
+        color:  #5C5665 
+        box-shadow: inset 7px 7px 12px rgba(89, 106, 107, 47%),  inset -7px -7px 12px #fff
 
 
-@mixin gradient()
+    .btn-closed-primary
+        color: #FFF
+        background: linear-gradient(90deg, #4776E6, #8E54E9)
+        // box-shadow: inset 7px 7px 12px rgba(89, 106, 107, 37%),  inset -7px -7px 12px #fff
+
+
     
