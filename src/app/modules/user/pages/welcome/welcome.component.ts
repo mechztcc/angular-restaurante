@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
+  chapter: number = 2;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  navigate() {
+    this.chapter = 1;
   }
 
 }
