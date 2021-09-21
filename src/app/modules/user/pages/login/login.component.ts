@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  chapter: number = 1;
+
   constructor() { }
 
   ngOnInit(): void {

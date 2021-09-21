@@ -7,6 +7,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { SharedModule } from '../shared/shared.module';
 import { CardWelcomeComponent } from './components/card-welcome/card-welcome.component';
 import { CardSelectionLoginComponent } from './components/card-selection-login/card-selection-login.component';
+import { CardLoginAdminComponent } from './components/card-login-admin/card-login-admin.component';
+import { CardLoginEmployeeComponent } from './components/card-login-employee/card-login-employee.component';
 
 
 
@@ -15,7 +17,9 @@ import { CardSelectionLoginComponent } from './components/card-selection-login/c
     WelcomeComponent,
     LoginComponent,
     CardWelcomeComponent,
-    CardSelectionLoginComponent
+    CardSelectionLoginComponent,
+    CardLoginAdminComponent,
+    CardLoginEmployeeComponent
   ],
   imports: [
     CommonModule,

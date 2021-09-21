@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  chapter: number = 2;
+  chapter: number = 1;
 
   constructor() { }
 
