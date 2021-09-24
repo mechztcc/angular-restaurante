@@ -17,4 +17,8 @@ export class CardLoginAdminComponent implements OnInit {
     this.router.navigate(['user']);
   }
 
+  createAccount() {
+    this.router.navigate(['user/create-account']);
+  }
+
 }

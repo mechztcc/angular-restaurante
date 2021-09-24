@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { NotifierService } from 'angular-notifier';
 import { IUser } from '../../shared/types/user';
 import { UsersService } from '../../shared/users.service';
@@ -16,7 +17,7 @@ export class CardCreateAccountComponent implements OnInit {
 
   loading: boolean = false;
 
-  constructor(private fb: FormBuilder, private usersService: UsersService, private notifierService: NotifierService) { 
+  constructor(private fb: FormBuilder, private usersService: UsersService, private notifierService: NotifierService, private router: Router) { 
   }
   
   ngOnInit(): void {
@@ -37,7 +38,10 @@ export class CardCreateAccountComponent implements OnInit {
 
   validateForm() {
     if(this.form.invalid) {
-      this.notifierService.notify('error', 'Formulario invalido')
+      this.notifierService.notify('error', 'Formulario invalido');
+    }
+    if(this.form.controls.password.value != this.form.controls.repeatPassword.value) {
+      this.notifierService.notify('warning', 'Senhas divergentes');
     } else {
       this.prepareToSubmit();
       this.submit();
@@ -62,6 +66,8 @@ export class CardCreateAccountComponent implements OnInit {
         this.notifierService.notify('success', 'Usuário criado');
       }).add(() => {
         this.loading = false;
+        this.form.reset();
+        this.router.navigate(['user/created']);
       })
   }
 

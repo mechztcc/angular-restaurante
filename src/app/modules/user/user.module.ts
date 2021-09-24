@@ -13,6 +13,8 @@ import { LoginEmployeeComponent } from './pages/login-employee/login-employee.co
 import { CreateAccountComponent } from './pages/create-account/create-account.component';
 import { CardCreateAccountComponent } from './components/card-create-account/card-create-account.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CreateSuccessComponent } from './pages/create-success/create-success.component';
+import { CardCreatedUserSuccessComponent } from './components/card-created-user-success/card-created-user-success.component';
 
 
 
@@ -26,7 +28,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CardLoginEmployeeComponent,
     LoginEmployeeComponent,
     CreateAccountComponent,
-    CardCreateAccountComponent
+    CardCreateAccountComponent,
+    CreateSuccessComponent,
+    CardCreatedUserSuccessComponent
   ],
   imports: [
     CommonModule,
