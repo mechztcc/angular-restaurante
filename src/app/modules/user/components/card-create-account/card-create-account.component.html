@@ -1,7 +1,11 @@
 <div class="card">
+   <form [formGroup]="form" (ngSubmit)="validateForm()">
     <h2>Criar conta gratuita</h2>
-    <input type="text" class="btn btn-open-default" placeholder="E-mail">
-    <input type="password" class="btn btn-open-default" placeholder="Senha">
-    <input type="password" class="btn btn-open-default" placeholder="Repita Senha">
-    <button class="btn btn-open-primary">Criar conta</button>
+    <input type="text" class="btn btn-open-default" placeholder="Nome Completo" formControlName="name">
+    <input type="text" class="btn btn-open-default" placeholder="E-mail" formControlName="email">
+    <input type="password" class="btn btn-open-default" placeholder="Senha" formControlName="password">
+    <input type="password" class="btn btn-open-default" placeholder="Repita Senha" formControlName="repeatPassword">
+    <button *ngIf="!loading" class="btn btn-open-primary" type="submit">Criar conta</button>
+    <button *ngIf="loading" class="btn btn-closed-default" type="button">Criar conta</button>
+   </form>
 </div>

@@ -12,6 +12,7 @@ import { CardLoginEmployeeComponent } from './components/card-login-employee/car
 import { LoginEmployeeComponent } from './pages/login-employee/login-employee.component';
 import { CreateAccountComponent } from './pages/create-account/create-account.component';
 import { CardCreateAccountComponent } from './components/card-create-account/card-create-account.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -30,7 +31,9 @@ import { CardCreateAccountComponent } from './components/card-create-account/car
   imports: [
     CommonModule,
     UserRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class UserModule { }
