@@ -3,11 +3,14 @@
 </button>
 <div class="card">
     <h2>Bem-vindo</h2>
-    <input class="btn btn-open-default" type="text" placeholder="E-mail">
-    <input class="btn btn-open-default" type="text" placeholder="Senha">
-    <div class="buttons">
-        <span>Lembrar</span>
-        <button type="button" class="btn btn-open-default">Entrar</button>
-    </div>
-    <button type="button" class="btn btn-open-primary" (click)="createAccount()">Criar conta grátis</button>
+    <form [formGroup]="form" (ngSubmit)="validateForm()">
+        <input class="btn btn-open-default" type="text" placeholder="E-mail" formControlName="email">
+        <input class="btn btn-open-default" type="text" placeholder="Senha" formControlName="password">
+        <div class="buttons">
+            <span>Lembrar</span>
+            <button type="submit" *ngIf="!loading" class="btn btn-open-default">Entrar</button>
+            <button type="button" *ngIf="loading" class="btn btn-closed-default">Entrar</button>
+        </div>
+    </form>
+    <button type="button" class="btn btn-open-primary" (click)="navigateToCreateAccount()">Criar conta grátis</button>
 </div>
