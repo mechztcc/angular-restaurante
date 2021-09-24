@@ -5,7 +5,7 @@
     <h2>Bem-vindo</h2>
     <form [formGroup]="form" (ngSubmit)="validateForm()">
         <input class="btn btn-open-default" type="text" placeholder="E-mail" formControlName="email">
-        <input class="btn btn-open-default" type="text" placeholder="Senha" formControlName="password">
+        <input class="btn btn-open-default" type="password" placeholder="Senha" formControlName="password">
         <div class="buttons">
             <span>Lembrar</span>
             <button type="submit" *ngIf="!loading" class="btn btn-open-default">Entrar</button>

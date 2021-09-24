@@ -1,1 +1,13 @@
-<p>home-admin works!</p>
+<div class="container">
+    <h2><b>Bem-vindo ao Sistema</b></h2>
+
+    <div class="container-grid">
+        <button *ngFor="let item of items" class="btn btn-open-default">{{ item }}</button>
+        <button *ngFor="let item of desactives" class="btn btn-closed-default" disabled>
+            {{ item }}
+            <button class="btn-sm btn-open-primary">Premium</button>
+        </button>
+    </div>
+
+    <button class="btn btn-open-primary">Seja Premium</button>
+</div>

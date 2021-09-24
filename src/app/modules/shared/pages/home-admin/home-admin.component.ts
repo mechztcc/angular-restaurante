@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeAdminComponent implements OnInit {
 
+  items: string[] = ['Funcionários', 'Cardápios', 'Pedidos', 'Produtos', 'Configurações'];
+  desactives: string[] = ['Suporte', 'Análise', 'Delivery']
+
   constructor() { }
 
   ngOnInit(): void {
