@@ -13,8 +13,12 @@ export class CardSelectionLoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigate() {
-    this.router.navigate(['user/login']);
+  navigate(v: number) {
+    if(v == 1) {
+      this.router.navigate(['user/login']);
+    } else {
+      this.router.navigate(['user/login/employee']);
+    }
   }
 
 }

@@ -9,6 +9,9 @@ import { CardWelcomeComponent } from './components/card-welcome/card-welcome.com
 import { CardSelectionLoginComponent } from './components/card-selection-login/card-selection-login.component';
 import { CardLoginAdminComponent } from './components/card-login-admin/card-login-admin.component';
 import { CardLoginEmployeeComponent } from './components/card-login-employee/card-login-employee.component';
+import { LoginEmployeeComponent } from './pages/login-employee/login-employee.component';
+import { CreateAccountComponent } from './pages/create-account/create-account.component';
+import { CardCreateAccountComponent } from './components/card-create-account/card-create-account.component';
 
 
 
@@ -19,7 +22,10 @@ import { CardLoginEmployeeComponent } from './components/card-login-employee/car
     CardWelcomeComponent,
     CardSelectionLoginComponent,
     CardLoginAdminComponent,
-    CardLoginEmployeeComponent
+    CardLoginEmployeeComponent,
+    LoginEmployeeComponent,
+    CreateAccountComponent,
+    CardCreateAccountComponent
   ],
   imports: [
     CommonModule,

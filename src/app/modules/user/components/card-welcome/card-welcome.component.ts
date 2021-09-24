@@ -20,4 +20,8 @@ export class CardWelcomeComponent implements OnInit {
     this.return.emit(e);
   }
 
+  navigate() {
+    this.router.navigate(['user/create-account']);
+  }
+
 }
