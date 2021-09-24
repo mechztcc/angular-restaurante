@@ -6,6 +6,7 @@ import { NavegationComponent } from './components/navegation/navegation.componen
 import { WavesTopComponent } from './components/waves-top/waves-top.component';
 import { WavesBottomComponent } from './components/waves-bottom/waves-bottom.component';
 import { HomeAdminComponent } from './pages/home-admin/home-admin.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 
@@ -14,7 +15,8 @@ import { HomeAdminComponent } from './pages/home-admin/home-admin.component';
     NavegationComponent,
     WavesTopComponent,
     WavesBottomComponent,
-    HomeAdminComponent
+    HomeAdminComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { HomeAdminComponent } from './pages/home-admin/home-admin.component';
   exports: [
     NavegationComponent,
     WavesTopComponent,
-    WavesBottomComponent
+    WavesBottomComponent,
+    NavbarComponent
   ]
 })
 export class SharedModule { }
