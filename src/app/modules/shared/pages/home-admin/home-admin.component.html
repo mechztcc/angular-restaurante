@@ -2,11 +2,14 @@
     <h2><b>Bem-vindo ao Sistema</b></h2>
 
     <div class="container-grid">
-        <button *ngFor="let item of items" class="btn btn-open-default">{{ item }}</button>
-        <button *ngFor="let item of desactives" class="btn btn-closed-default" disabled>
-            {{ item }}
-            <button class="btn-sm btn-open-primary">Premium</button>
-        </button>
+        <button class="btn btn-open-default" [routerLink]="['/employee']" >Funcionários</button>
+        <button class="btn btn-open-default" >Cardápios</button>
+        <button class="btn btn-open-default" >Pedidos</button>
+        <button class="btn btn-open-default" >Produtos</button>
+        <button class="btn btn-open-default" >Configurações</button>
+        <button class="btn btn-closed-default"></button>
+        <button class="btn btn-closed-default"></button>
+        <button class="btn btn-closed-default"></button>
     </div>
 
     <button class="btn btn-open-primary">Seja Premium</button>
