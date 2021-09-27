@@ -29,7 +29,8 @@ export class CreateComponent implements OnInit {
       phone: ['', Validators.required],
       cpf: ['', Validators.required],
       pix: ['', Validators.required],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
+      login: ['', Validators.required]
     });
   }
 
@@ -49,7 +50,9 @@ export class CreateComponent implements OnInit {
       phone: this.form.controls.phone.value,
       cpf: this.form.controls.cpf.value,
       pix: this.form.controls.pix.value,
-      password: this.form.controls.password.value
+      password: this.form.controls.password.value,
+      login: this.form.controls.login.value,
+      restaurant_id: 6
     };
   }
 
@@ -60,6 +63,7 @@ export class CreateComponent implements OnInit {
         this.notifierService.notify('success', 'Funcionário cadastrado com sucesso');
       }).add(() => {
         this.loading = false;
+        this.form.reset();
       });
   }
 

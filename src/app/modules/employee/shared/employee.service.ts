@@ -8,7 +8,7 @@ import { IEmployee } from './types/employee';
 })
 export class EmployeeService {
 
-  url: string = 'http://localhost:3700/employee'
+  url: string = 'http://localhost:3700/employees'
   
   constructor(private http: HttpClient) { }
 
