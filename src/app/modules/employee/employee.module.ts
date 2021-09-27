@@ -5,6 +5,7 @@ import { EmployeeRoutingModule } from './employee-routing.module';
 import { ListComponent } from './pages/list/list.component';
 import { CardListComponent } from './components/card-list/card-list.component';
 import { CreateComponent } from './pages/create/create.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,9 @@ import { CreateComponent } from './pages/create/create.component';
   ],
   imports: [
     CommonModule,
-    EmployeeRoutingModule
+    EmployeeRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class EmployeeModule { }
