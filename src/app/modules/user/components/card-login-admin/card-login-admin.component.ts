@@ -60,7 +60,7 @@ export class CardLoginAdminComponent implements OnInit {
         }
       }).add(() => {
         this.loading = false;
-        this.router.navigate(['home']);
+        this.router.navigate(['home/']);
       })
   }
 
